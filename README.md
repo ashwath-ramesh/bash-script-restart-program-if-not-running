@@ -39,3 +39,15 @@ Using the script's relative or absolute path:
 This command assumes the script is in the current working directory. Replace ./ with the script's absolute path if it is located elsewhere.
 
 
+### To run a Bash script from crontab, follow these steps:
+
+Ensure your script is executable: Make sure your Bash script is executable by running the following command:
+```chmod +x /path/to/your/script.sh```
+Replace /path/to/your/script.sh with the actual path to your script.
+
+Open your user's crontab: Run the following command to open the crontab for the current user:
+```crontab -e```
+This command will open the crontab file in the default text editor, where you can add your scheduled tasks.
+
+Add a new cron job: In the crontab file, add a new line for your Bash script. The line should follow the cron job format, which consists of six fields:
+```* * * * * /path/to/your/script.sh```
