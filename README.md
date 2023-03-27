@@ -3,6 +3,12 @@ Use the below simple bash script to restart a program in linux, if it is current
 
 Get the complete bash script from: ```restart_myscript.sh```
 
+#### Shebang code
+```#!/bin/bash```
+
+#### (0) Set path to root folder of project
+```export PYTHONPATH="/home/rebag/rebag-webscraper:$PYTHONPATH"```
+
 #### (1) Name of the python script to monitor
 ```SCRIPT_NAME="/path/to/my_python_script.py"```
 
