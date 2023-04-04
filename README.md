@@ -57,3 +57,5 @@ This command will open the crontab file in the default text editor, where you ca
 
 Add a new cron job: In the crontab file, add a new line for your Bash script. The line should follow the cron job format, which consists of six fields:
 ```* * * * * /path/to/your/script.sh```
+
+If cron job is executing the script, then in the configs/misc.py file, paths need to be made ```absolute```
